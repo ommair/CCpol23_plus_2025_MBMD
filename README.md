@@ -32,20 +32,20 @@ The input directories contain simulation inputs and fitted parameter sets. The m
 
 The switching coordinate is the average separation between the centers of mass of the three monomers:
 
-$R_{avg}$ = $R_{AB}+R_{BC}+R_{CA}$/3
+$R_{avg}$ = $(R_{AB}+R_{BC}+R_{CA})$/3
 
 The SR and LR fitting domains overlap:
 
-- SR fitting domain: R_{avg} < 5.5 Å.
-- LR fitting domain: R_{avg} > 4.5 Å.
+- SR fitting domain: $R_{avg}$ < 5.5 Å.
+- LR fitting domain: $R_{avg}$ > 4.5 Å.
 
 During evaluation, the FS3 contribution is selected as follows:
 
 | Average monomer separation | FS3 evaluation |
 |---|---|
-| R_{avg} ≤ 4.5 Å | SR representation |
-| 4.5 < R_{avg} < 5.5 Å | Smooth combination of SR and LR representations |
-| R_{avg} ≥ 5.5 Å | LR representation |
+| $R_{avg}$ ≤ 4.5 Å | SR representation |
+| 4.5 < $R_{avg}$ < 5.5 Å | Smooth combination of SR and LR representations |
+| $R_{avg}$ ≥ 5.5 Å | LR representation |
 
 Within the overlap region, define
 
