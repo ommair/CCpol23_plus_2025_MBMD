@@ -47,24 +47,6 @@ During evaluation, the FS3 contribution is selected as follows:
 | 4.5 < $R_{avg}$ < 5.5 Å | Smooth combination of SR and LR representations |
 | $R_{avg}$ ≥ 5.5 Å | LR representation |
 
-Within the overlap region, define
-
-$$
-x =
-\frac{R_{\mathrm{avg}}-4.5\,\mathrm{\AA}}
-     {1.0\,\mathrm{\AA}},
-$$
-
-and
-
-s(x)=1-3x²+2x³.
-
-The blended contribution is
-
-F_{S³} = s(x)F_{S³}^{SR} + [1-s(x)]F_{S³}^{LR}.
-
-These switching boundaries are distinct from the three-body interaction cutoff specified in CONTROL.
-
 ## Repository Structure
 
 CCpol23_plus_2025_MBMD/
