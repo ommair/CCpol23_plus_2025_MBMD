@@ -1,0 +1,17 @@
+   ccpol23plus        # potential name (tip4p,tip5p,sapt5s,ccpol5s,ccpol8s,ccpol8s_omo,ccpol23plus)
+   npt_b  1.0  2.0               # thermodynamical ensemble (nve,nvt_b,nvt_h,npt_b,npt_h) taut  taup
+   fcc_config          # inintial configuration (fcc_config or ran_config)  
+   298.15              # temp0   - desired temperature (Kelvin)
+   0.001               # pres0   - desired pressure (atm)
+   1                   # nsteps  - total number of steps
+   0.001                dt      - time step in ps
+   0                   # nequil  - equilibration steps
+   9.0                 # rcut    - cutoff radius 
+   50                # frequency of writing coords in history file
+   T                   # random velocites and ang momentum (T or F) 
+   T                   # random quaternions  (T or F) 
+   T point_dipole damped ES  # include induction model (T or F), (physical_dipole or point_dipole),  (damped or undamped), (cutoff,GSF,RB,Ewald=ES)
+   T  T  T          # 3body potential (T or F), FS3_term, FS2_term  
+   7.5  6.51292  7.40446  10.000   # rcut3   alph3  r0  delta3 
+   F                   # T or F (restart simulation using previous info saved) 
+   F 0.011          # force check numerical vs analytical, hsize 
