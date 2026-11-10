@@ -21,10 +21,10 @@ Two fitted three-body variants are included:
 
 | Variant | Description | Input directory |
 |---|---|---|
-| FS3 | Improved F_{S³} representation | input_fit_ccpol23_2025_fs3 (input_fit_ccpol23_2025_fs3) |
-| FS2+FS3 | Optimized combination of F_{S²} and F_{S³} | input_fit_ccpol23_2025_fs2fs3 (input_fit_ccpol23_2025_fs2fs3) |
+| FS3 | Improved $F_{S³}$ representation | input_fit_ccpol23_2025_fs3 (input_fit_ccpol23_2025_fs3) |
+| FS2+FS3 | Optimized combination of $F_{S²}$ and $F_{S³}$ | input_fit_ccpol23_2025_fs2fs3 (input_fit_ccpol23_2025_fs2fs3) |
 
-Here, F_{S²} and F_{S³} denote contributions to the three-body interaction. They should not be confused with the two-body and three-body terms of the many-body expansion.
+Here, $F_{S²}$ and $F_{S³}$ denote contributions to the three-body interaction. They should not be confused with the two-body and three-body terms of the many-body expansion.
 
 The input directories contain simulation inputs and fitted parameter sets. The molecular dynamics implementation uses rigid monomers, with molecular translation and rotation.
 
@@ -32,9 +32,7 @@ The input directories contain simulation inputs and fitted parameter sets. The m
 
 The switching coordinate is the average separation between the centers of mass of the three monomers:
 
-          R_{AB}+R_{BC}+R_{CA}
-R_{avg} = ────────────────────.
-                   3
+$R_{avg}$ = $R_{AB}+R_{BC}+R_{CA}$/3
 
 The SR and LR fitting domains overlap:
 
