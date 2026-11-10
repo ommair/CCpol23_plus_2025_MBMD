@@ -272,37 +272,6 @@ To continue an existing simulation:
 
 The implementation appends to several output files. Use separate working directories for independent simulations.
 
-## Validation
-
-An FS2 periodic-boundary and finite-difference test is included:
-
-python3 source/tests/check_fs2_periodic.py
-
-The test checks:
-
-- Periodic invariance of the FS2 energy.
-- Periodic invariance of site and molecular forces.
-- Virial consistency.
-- Agreement with finite-difference derivatives.
-
-It compiles the extracted FS2 routine using gfortran and a serial MPI-reduction stub, with temporary build files.
-
-This test covers the FS2 routine. Full-model energy, force, and bulk-property validation should be assessed separately for the selected parameter set and simulation conditions.
-
-## Reproducibility
-
-When reporting calculations performed with this implementation, record:
-
-- The repository commit or release.
-- The selected FS3 or FS2+FS3 variant.
-- The exact SR and LR parameter files.
-- The compiler and MPI versions.
-- The CONTROL and FIELD inputs.
-- The number of molecules and MPI ranks.
-- The ensemble, timestep, and interaction cutoffs.
-- The equilibration and production lengths.
-- The analysis procedure and uncertainty estimates.
-
 ## Citation
 
 Please cite the underlying force-field framework:
