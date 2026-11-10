@@ -1,0 +1,75 @@
+1. Download the official Open MPI 4.1.8 source:
+
+```
+mkdir -p "$HOME/local/src"
+cd "$HOME/local/src"
+
+curl -fLO https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.8.tar.gz
+
+tar -xzf openmpi-4.1.8.tar.gz
+cd openmpi-4.1.8
+```
+
+2. Configure, compile, and install:
+
+```
+./configure --prefix="$HOME/local/openmpi-4.1.8" \
+    CC=/usr/bin/gcc FC=/usr/bin/gfortran \
+    --enable-mpi-fortran --disable-mpi-cxx
+```
+
+After configuration succeeds:
+
+```
+/bin/make -j2
+```
+
+After compilation succeeds:
+
+```
+/bin/make install
+```
+
+This uses the standard source-installation procedure with a user-owned installation prefix. [Open MPI installation instructions (https://docs.open-mpi.org/en/main/installing-open-mpi/quickstart.html)](<https://docs.open-mpi.org/en/main/installing-open-mpi/quickstart.html>)
+
+3. Activate your installation:
+
+```
+export PATH="$HOME/local/openmpi-4.1.8/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/local/openmpi-4.1.8/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+hash -r
+
+command -v mpifort
+mpifort --showme:compile
+```
+
+The paths should now point inside **your home directory**.
+
+4. Test that `USE mpi` compiles:
+
+```
+printf 'program test_mpi\nuse mpi\nend program test_mpi\n' > /tmp/ommair_test_mpi.f90
+
+mpifort -c /tmp/ommair_test_mpi.f90 -o /tmp/ommair_test_mpi.o
+```
+
+5. In your simulation source directory, change the Makefile’s compiler from:
+
+```
+FC = /bin/mpif90.openmpi
+```
+
+to:
+
+```
+FC = mpifort
+```
+
+If the compiler variable has another name, change that variable instead. Then rebuild using your Makefile’s clean target, if available:
+
+```
+/bin/make clean
+/bin/make
+```
+
+**Use this same local Open MPI installation when running the executable.** Include the two `export` lines above in your job script so compilation and execution use matching MPI libraries.
