@@ -279,8 +279,8 @@ The implementation appends to several output files. Use separate working directo
 
 ## Citation
 
-Please cite the force-field framework:
-
-**Ommair et al., “How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?,” J. Chem. Theory Comput. (2026) 22 (6)**  
-https://doi.org/10.1021/acs.jctc.5c02107
+> Ishaque, O.; Melkumov, J. W.; Szalewicz, K.  
+> How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?  
+> *J. Chem. Theory Comput.* **2026**, *22* (6), 2757–2781.  
+> DOI: [10.1021/acs.jctc.5c02107](https://doi.org/10.1021/acs.jctc.5c02107)
 
