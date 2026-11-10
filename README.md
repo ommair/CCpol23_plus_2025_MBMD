@@ -80,8 +80,6 @@ CCpol23_plus_2025_MBMD/
     ├── data3b_full_LR_4p5
     └── run.sh
 
-The build uses source/threebody_potential.f90. Files with suffixes such as _old or _SLR are alternative or historical source versions and are not selected by the current Makefile.
-
 ## Requirements
 
 The molecular dynamics executable requires:
