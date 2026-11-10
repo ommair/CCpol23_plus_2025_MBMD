@@ -7,8 +7,15 @@ The model updates the three-body interaction while retaining the remaining poten
 > Góra et al., “Predictions for water clusters from a first-principles two- and three-body force field,” The Journal of Chemical Physics 140, 194101 (2014).
 > DOI: 10.1063/1.4875097 (https://doi.org/10.1063/1.4875097)
 
-Implementation and maintenance: Ommair Ishaque
-Version date: November 8, 2025
+## Related Publication
+
+The optimization of the three-body representation and the analysis
+of long-range three-body interactions are described in:
+
+> **Ommair Ishaque, John W. Melkumov, and Krzysztof Szalewicz**,  
+> “How Long-Range Are Three-Body ‘Exchange’ Interactions in Liquid Water?”  
+> *Journal of Chemical Theory and Computation* **22** (6), 2757–2781 (2026).  
+> DOI: [10.1021/acs.jctc.5c02107](https://doi.org/10.1021/acs.jctc.5c02107)
 
 ## Overview
 
@@ -272,9 +279,8 @@ The implementation appends to several output files. Use separate working directo
 
 ## Citation
 
-Please cite the underlying force-field framework:
+Please cite the force-field framework:
 
 **Ommair et al., “How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?,” J. Chem. Theory Comput. (2026) 22 (6)**  
 https://doi.org/10.1021/acs.jctc.5c02107
 
-Include the relevant input files, model variant, compiler/MPI versions, repository commit, and a minimal example when reporting a problem.
