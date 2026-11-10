@@ -3,8 +3,8 @@
 This repository contains the reference implementation of the **CCpol23+ (2025)** potential energy surface (PES) for water.  
 The model improves the description of short- and long-range three-body interactions and extends the framework introduced in:
 
-**Góra et al., “Predictions for water clusters from a first-principles two- and three-body force field,” J. Chem. Phys. 140, 194101 (2014)**  
-DOI: 10.1063/1.4875097
+**Ommair et al., “How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?,” J. Chem. Theory Comput. (2026) 22 (6)**  
+https://doi.org/10.1021/acs.jctc.5c02107
 
 **Current version written by:** *Ommair Ishaque (Nov 8, 2025)*
 
