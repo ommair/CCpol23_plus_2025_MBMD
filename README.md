@@ -7,9 +7,6 @@ The model updates the three-body interaction while retaining the remaining poten
 > Góra et al., “Predictions for water clusters from a first-principles two- and three-body force field,” The Journal of Chemical Physics 140, 194101 (2014).
 > DOI: 10.1063/1.4875097 (https://doi.org/10.1063/1.4875097)
 
-**Ommair et al., “How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?,” J. Chem. Theory Comput. (2026) 22 (6)**  
-https://doi.org/10.1021/acs.jctc.5c02107
-
 Implementation and maintenance: Ommair Ishaque
 Version date: November 8, 2025
 
@@ -310,21 +307,7 @@ When reporting calculations performed with this implementation, record:
 
 Please cite the underlying force-field framework:
 
-> Góra et al., “Predictions for water clusters from a first-principles two- and three-body force field,” The Journal of Chemical Physics 140, 194101 (2014).
-> DOI: 10.1063/1.4875097 (https://doi.org/10.1063/1.4875097)
-
-Also identify this repository, the parameter variant, and the commit or release used:
-
-CCpol23+(2025) MBMD
-Implementation: Ommair Ishaque
-https://github.com/ommair/CCpol23_plus_2025_MBMD
-
-## License
-
-A standalone LICENSE file has not yet been added to this repository. Licensing information should be confirmed with the maintainer.
-
-## Contact
-
-For questions, reproducibility reports, or suspected implementation issues, use the repository’s issue tracker (https://github.com/ommair/CCpol23_plus_2025_MBMD/issues).
+**Ommair et al., “How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?,” J. Chem. Theory Comput. (2026) 22 (6)**  
+https://doi.org/10.1021/acs.jctc.5c02107
 
 Include the relevant input files, model variant, compiler/MPI versions, repository commit, and a minimal example when reporting a problem.
