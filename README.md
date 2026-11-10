@@ -1,22 +1,14 @@
 # CCpol23+(2025) MBMD
 
-This repository contains the reference implementation of the **CCpol23+ (2025)** potential energy surface (PES) for water.  
-The model improves the description of short- and long-range three-body interactions and extends the framework introduced in:
-
-**Ommair et al., “How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?,” J. Chem. Theory Comput. (2026) 22 (6)**  
-https://doi.org/10.1021/acs.jctc.5c02107
-
-**Current version written by:** *Ommair Ishaque (Nov 8, 2025)*
-
-
-# CCpol23+(2025) MBMD
-
 Reference implementation of the CCpol23+(2025) water potential energy surface (PES), with a Fortran/MPI molecular dynamics implementation and parameter sets for two three-body representations.
 
-The model updates the three-body interaction while retaining the remaining potential components and parameters from the framework introduced in:
+The model updates the three-body interaction while retaining the remaining potential components from the framework introduced in:
 
 > Góra et al., “Predictions for water clusters from a first-principles two- and three-body force field,” The Journal of Chemical Physics 140, 194101 (2014).
 > DOI: 10.1063/1.4875097 (https://doi.org/10.1063/1.4875097)
+
+**Ommair et al., “How Long-Range Are Three-Body “Exchange” Interactions in Liquid Water?,” J. Chem. Theory Comput. (2026) 22 (6)**  
+https://doi.org/10.1021/acs.jctc.5c02107
 
 Implementation and maintenance: Ommair Ishaque
 Version date: November 8, 2025
